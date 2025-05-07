@@ -27,10 +27,15 @@ This project was developed as part of an **academic assignment** to demonstrate 
 ## 📂 Project Structure  
 /BeFit-AI-Fitness-Trainer
 ├── client/ # React Frontend
+
 │ ├── public/
+
 │ ├── src/
+
 │ ├── package.json
+
 │ └── ...
+
 ├── server/ # Express Backend
 │ ├── routes/
 │ ├── controllers/
