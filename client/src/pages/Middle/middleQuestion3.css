@@ -1,0 +1,83 @@
+/* Common wrapper for questions */
+.signin-wrapper {
+    min-height: 100vh;
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .signin-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /* Grid for option cards */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    justify-items: center;
+  }
+  
+  /* Option card styles */
+  .option-card {
+    background-color: #1a1a1a;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+  
+  .option-card img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .option-card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Highlight selected option */
+  .option-card.selected {
+    border-color: #00ffff;
+    background-color: #1f2937;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  }
+  
+  /* Continue button */
+  .continue-btn {
+    margin-top: 2.5rem;
+    background-color: #00ffff;
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .continue-btn:hover {
+    background-color: #06d6d6;
+    transform: scale(1.05);
+  }
+  

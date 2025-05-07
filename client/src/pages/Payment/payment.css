@@ -1,0 +1,162 @@
+.payment-container {
+    min-height: 100vh;
+    /* background-color: #0a0a0a; */
+    background: linear-gradient(90deg, #000829, #0a0a0a);
+    /* background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite;  */
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .payment-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #06dcdc, #00ffff66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInDown 0.6s ease;
+  }
+  
+  .payment-subheading {
+    font-size: 1rem;
+    font-weight: bolder;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    animation: fadeInUp 0.6s ease;
+    color: #cfcfcf;
+  }
+  
+  .benefits-section {
+    margin-bottom: 2rem;
+  }
+  
+  .benefits-section h2 {
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #06dcdc, #00ffff66);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  
+  .benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: bold;
+  }
+  
+  .benefits-list li {
+    margin: 0.5rem 0;
+    position: relative;
+    color: #e0faff;
+  }
+  
+  .benefits-list li::before {
+    content: "•";
+    color: #06dcdc;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .plans-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .plan-card {
+    background: rgba(14, 165, 233, 0.1);
+    border: 2px solid transparent;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .plan-card:hover,
+  .plan-card.active {
+    border-color: #00ffff66;
+    transform: scale(1.05);
+    background: linear-gradient(145deg, #06dcdc 0%, #00ffff66 100%);
+    color: #0a0a0a;
+  }
+  
+  .plan-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plan-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .continue-btn {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(to right, #06dcdc, #00ffff66);
+    color: #0a0a0a;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .continue-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #00ffff66, #06dcdc);
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    } to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid #0ea5e9;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 0.8s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

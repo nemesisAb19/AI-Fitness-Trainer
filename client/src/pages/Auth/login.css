@@ -1,0 +1,111 @@
+.login-page {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8%;
+    position: relative;
+  }
+  
+  .login-form-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    animation: slideIn 1s ease forwards;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-left: 20rem;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .login-logo {
+    width: 120px;
+    margin: 0 auto 30px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .login-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .login-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .login-input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+  }
+  
+  .forgot-password {
+    text-align: right;
+    font-size: 14px;
+    color: #00ffffcc;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .forgot-password:hover {
+    color: #0ea5e9;
+  }
+  
+  .signin-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #0ea5e9, #00ffff66);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .signin-btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(to right, #00ffff66, #0ea5e9);
+  }
+  
+  .signup-link {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .signup-hover {
+    color: #0ea5e9;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .signup-hover:hover {
+    text-decoration: underline;
+    color: #00ffff;
+  }
+  

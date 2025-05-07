@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.fixed-footer {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 2rem 1rem;
+  animation: slideInFooter 1s ease forwards;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Animation */
+@keyframes slideInFooter {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Grid Layout */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.8rem; /* Less gap between columns */
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-column li:hover {
+  color: #00bfff;
+  transform: translateX(4px);
+}
+
+.footer-logo {
+  width: 110px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo-link{
+  display: inline-block;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+/* Individual brand colors */
+.social-icons svg:nth-child(1) {
+  color: #1877F2; /* Facebook Blue */
+}
+.social-icons svg:nth-child(2) {
+  color: #E1306C; /* Instagram Pink */
+}
+.social-icons svg:nth-child(3) {
+  color: #1c1d1e; /* Twitter Blue */
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  /* color: #00ffcc !important; */
+  cursor: pointer;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.footer-bottom hr {
+  border: 0.5px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #777;
+}

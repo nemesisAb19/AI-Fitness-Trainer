@@ -1,0 +1,87 @@
+.signin-step2-wrapper {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.signin-step2-content {
+  margin-top: 6rem;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 0.75rem 1rem;
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  width: 100px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00ffff;
+}
+
+.weight-input {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.bmi-box {
+  background-color: #001f2f;
+  color: #00ffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.bmi-description {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.bmi-formula {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #999;
+}
+
+
+.continue-btn {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continue-btn:hover {
+  background-color: #00cccc;
+}

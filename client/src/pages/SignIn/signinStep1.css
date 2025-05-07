@@ -1,0 +1,122 @@
+/* Disable scroll on entire page */
+/* body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  } */
+  
+.signin-wrapper {
+    background-color: #0f0f0f;
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .signin-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    /* margin-bottom: 5rem; */
+    /* background-color: red; */
+  }
+  
+  .signin-subtitle {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2.5rem;
+  }
+  
+  .age-cards {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .age-card {
+    background-color: #0f0f0f;
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 180px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .age-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .age-card.selected {
+    border: 2px solid #00ffff;
+  }
+  
+  .age-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .age-card p {
+    margin: 0;
+    padding: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .terms-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    text-align: left;
+    max-width: 700px;
+    margin: 2rem auto 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .terms-section input[type="checkbox"] {
+    margin-top: 5px;
+  }
+  
+  .terms-section strong u {
+    cursor: pointer;
+    color: #00bcd4;
+    transition: color 0.3s;
+  }
+  
+  .terms-section strong u:hover {
+    color: #00ffff;
+  }
+  
+  .disclaimer {
+    color: #999;
+    font-size: 0.85rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .continue-btn {
+    background-color: #00bcd4;
+    color: #000;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .continue-btn:hover {
+    background-color: #00ffff;
+  }
+  

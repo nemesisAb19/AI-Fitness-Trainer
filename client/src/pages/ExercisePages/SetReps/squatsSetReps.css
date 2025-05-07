@@ -1,0 +1,375 @@
+.squats-setup-page {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .setup-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.6s ease-in;
+  }
+  
+  .setup-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    background: linear-gradient(to right, #ec4899, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .input-group {
+    margin-bottom: 25px;
+  }
+  
+  .input-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #ccc;
+  }
+  
+  .input-control {
+    display: flex;
+    align-items: center;
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .input-control input {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    outline: none;
+  }
+  
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    background: #222;
+    cursor: pointer;
+  }
+  
+  .arrows svg {
+    padding: 4px 6px;
+    color: #a855f7;
+    /* transition: background 0.3s ease; */
+    transition: transform 0.2s ease;
+  }
+  
+  .arrows svg:hover {
+    /* background: #333; */
+    transform: scale(1.2);
+  }
+  
+  .rest-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: white;
+    text-align: center;
+  }
+  
+  .rest-input::placeholder {
+    color: #aaa;
+  }
+  
+  .start-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    background: linear-gradient(to right, #ec4899, #a855f7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .start-btn:hover {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    transform: translateY(-2px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .start-btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+
+  .squats-video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .video-stream {
+    max-width: 100vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  /* .video-stream {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+    object-fit: contain;
+  } */
+  
+  .squats-video-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  /* .video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  } */
+  
+  .close-icon {
+    color: white;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+  
+  .spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #06dcdc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading-text {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .error-container {
+    text-align: center;
+    color: #ff6b6b;
+  }
+  
+  .error-text {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .retry-btn {
+    background: #06dcdc;
+    color: #000;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .retry-btn:hover {
+    background: #0dd;
+  }
+
+  
+  /* Control Panel Styling */
+.squats-video-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+.squats-video-controls button {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.squats-video-controls button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.icon-btn {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #06dcdc;
+}
+
+/* Recording button animation */
+.squats-video-controls .recording {
+  animation: pulseRed 1.5s infinite;
+  background: rgba(255, 0, 0, 0.2);
+  border-color: rgba(255, 0, 0, 0.5);
+}
+
+@keyframes pulseRed {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .squats-video-controls {
+    flex-direction: column;
+    bottom: 10px;
+  }
+
+  .squats-video-controls button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE BREAKPOINTS   */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .setup-container {
+    padding: 30px 20px;
+  }
+
+  .setup-title {
+    font-size: 24px;
+  }
+
+  .input-control input,
+  .rest-input {
+    font-size: 16px;
+  }
+
+  .start-btn {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .squats-video-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .squats-video-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .setup-container {
+    padding: 25px 15px;
+  }
+
+  .setup-title {
+    font-size: 20px;
+  }
+
+  .input-label {
+    font-size: 14px;
+  }
+
+  .start-btn {
+    font-size: 15px;
+  }
+
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+  
