@@ -25,7 +25,7 @@ This project was developed as part of an **academic assignment** to demonstrate 
 
 
 ## 📂 Project Structure  
-/BeFit-AI-Fitness-Trainer
+/AI-Fitness-Trainer
 
 ├── client/ # React Frontend
 
