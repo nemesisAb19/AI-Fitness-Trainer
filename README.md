@@ -26,6 +26,7 @@ This project was developed as part of an **academic assignment** to demonstrate 
 
 ## 📂 Project Structure  
 /BeFit-AI-Fitness-Trainer
+
 ├── client/ # React Frontend
 
 │ ├── public/
@@ -37,15 +38,25 @@ This project was developed as part of an **academic assignment** to demonstrate 
 │ └── ...
 
 ├── server/ # Express Backend
+
 │ ├── routes/
+
 │ ├── controllers/
+
 │ ├── models/
+
 │ └── ...
+
 ├── exercise-server/ # AI Logic (Pose Detection)
+
 │ ├── PoseModule.py
+
 │ ├── ExercisesModule.py
+
 │ ├── bicep_check.py
+
 │ └── ...
+
 ├── README.md
 
 
